@@ -20,12 +20,16 @@ import { CharactersComponent } from './characters/characters.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { MatDialogModule } from '@angular/material/dialog';
+import { DetailComponent } from './characters/character/detail/detail.component'
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CharacterComponent,
-    CharactersComponent
+    CharactersComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HttpClientModule,
     FlexLayoutModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDialogModule
 
   ],
   providers: [],

@@ -19,6 +19,7 @@ export class CharactersComponent implements OnInit {
 
   getCharacters(){
     this.allCharacters = this.charactersApiService.getAllCharacters();
+    
   }
 
 }

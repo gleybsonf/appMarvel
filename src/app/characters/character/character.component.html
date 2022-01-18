@@ -4,8 +4,16 @@
         {{character.name}}
     </mat-card-title>
     <mat-card-footer>
-        <a href="{{character.urls[0].url}}" target="blank"fxFlex mat-flat-button color="primary">
-            Details
+        <!-- <a href="{{character.urls[0].url}}" target="blank"fxFlex mat-flat-button color="primary">
+            Detalhes
+        </a> -->
+        <!-- <a (click)="openDialog()" target="blank"fxFlex mat-flat-button color="primary">
+            Detalhes
+        </a> -->
+        <a (click)="detalhar()" target="blank"fxFlex mat-flat-button color="primary">
+            Detalhes
         </a>
     </mat-card-footer>
 </mat-card>
+
+<app-detail [character]="character" *ngIf="operacao=='detalhar'"></app-detail>
